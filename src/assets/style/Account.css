@@ -1,44 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
 
-.Background {
+/*.Background {
   width: 1479px;
   height: 750px;
   position: absolute;
   margin-left: -250px;
   color: black;
   text-align: center;
-}
+}*/
 
-.Background img,
-.Logo-container img {
-  object-fit: cover;
+/*title-container-2{
   width: 100%;
   height: 100%;
+  left:-100%;
+  position: absolute;
+  z-index: -3;
+  background-color: #7bcfbf;
+}*/
+
+.Register-Img-container img{
+  position:absolute;
+  z-index: -1;
+  left: -100%;
+  margin-top:48%;
+  width: 100%;
+  height: 50%;
+}
+.Login-Imagen-container img{
+  top:-0%;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.Logo-container-register img{
+  top: 4%;
+  left: -65%;
+  width: 15%;
+  height: 17%;
+  position: absolute;
+  z-index: 1;
+}
+
+.User-img-container{
+  position: absolute;
+  top:-20%;
+  left: 32%;
+  height: 70%;
+  width: 45%;
 }
 
 .Login-container {
-  width: 400px;
-  height: 500px;
+  width: 50%;
+  height: 100%;
+  top:0%;
+  left:50%;
   position: absolute;
-  top: 35px;
-  left: 595px;
-  background-color: rgb(21, 101, 193, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: #ffffff;
+}
+.Register-container{
+  width: 50%;
+  height: 100%;
+  top:0%;
+  left:50%;
+  position: absolute;
+  background-color: #c6f2ff;
 }
 
-.Register-container {
-  width: 400px;
-  height: 680px;
-  margin-left: 15px;
+.LoginForm-container{
+  width: 50%;
+  height: 57%;
   position: absolute;
-  top: 35px;
-  left: 595px;
-  background-color: rgb(21, 101, 193, 0.15);
-  backdrop-filter: blur(5px);
+  top:24%;
+  left:26%;
+  background-color: #8adb1f;
 }
 
-.title-container-1 {
+.RegisterForm-container{
+  width: 60%;
+  height: 73%;
+  position: absolute;
+  top:13%;
+  left:21%;
+  background-color: #ffffff;
+}
+
+/*.title-container-1 {
   width: 100%;
   height: 50px;
   display: flex;
@@ -47,25 +96,15 @@
   margin-left: 30px;
   margin-top: 25px;
   font-family: "Bebas Neue", cursive;     
-}
+}*/
 
-.Logo-container {
-  width: 50px;
-  height: 100%;
-}
-
-.Logo-container{
-  animation: rotation 8s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
+.Logo-container img{
+  top: 7%;
+  left: -70%;
+  width: 18%;
+  height: 20%;
+  position: absolute;
+  z-index: 1;
 }
 
 .Title_R {
@@ -85,33 +124,103 @@ form {
   font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-#Age_Login {
+#name-user{
+  background-color: #d6d6d6;
+  border: 0;
+  width: 70%;
   position: relative;
-  left: -135px;
-  font-size: 16px;
+  left: 14%;
+}
+
+#surnames-user{
+  background-color: #d6d6d6;
+  border: 0;
+  width: 70%;
+  position: relative;
+  left: 14%;
+}
+
+#emailConfirm1{
+  background-color: #d6d6d6;
+  border: 0;
+  width: 70%;
+  position: relative;
+  left: 14%;
+}
+
+#passwordConfirm1{
+  background-color: #d6d6d6;
+  border: 0;
+  width: 70%;
+  position: relative;
+  left: 14%;
+}
+
+#Condition{
+  position: absolute;
+  top: 74%;
+  left: 21%;
+  font-size: 0.7em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#Cell_Login {
-  position: relative;
-  left: -115px;
-  font-size: 16px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#Email {
-  position: relative;
-  left: -130px;
+#User-Register{
+  position: absolute;
+  left: 14%;
+  top: 16%;
   font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
-
+#Surnames-Register{
+  position: absolute;
+  left: 14%;
+  top: 30%;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+#Email-Register{
+  position: absolute;
+  left: 14%;
+  top: 44%;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+#Password-Register{
+  position: absolute;
+  left: 14%;
+  top: 58%;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+#Email {
+  position: absolute;
+  left: 14%;
+  top: 25%;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+#email_Login{
+  background-color: #ffffff;
+  border: 0;
+  width: 70%;
+  position: absolute;
+  left: 14%;
+  top: 35%;
+  
+}
+#password_Login{
+  background-color: #ffffff;
+  border: 0;
+  width: 70%;
+  position: absolute;
+  left: 14%;
+  top: 60%;
+}
 
 #Password {
-  position: relative;
-  left: -118px;
-  font-size: 16px;
+  position: absolute;
+  left: 14%;
+  top: 50%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -139,27 +248,58 @@ form {
   top: 70%;
 }
 
-.Create-button-container {
+/*Fuentes de texto*/
+
+.abrev-Register {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: absolute;
-  left: 30%;
-  bottom: 20%;
-  top: 540px;
+  left: -50%;
+  top: 10%;
+}
+.abrev-Login{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  font-size: 3em;
+  left: -53%;
+  top: 12%;
+}
+.txt1-Login{
+  position: absolute;
+  font-size: 2em;
+  left: -72%;
+  top: 26%;
+}
+.txt2-Login{
+  position: absolute;
+  width: 70%;
+  background-color: #ffffff;
+  font-size: 1.3em;
+  left: -85%;
+  top: 45%;
+  text-align: center;
 }
 
-#Login-button {
-  width: 150px;
-  height: 30px;
-  background: #008cff;
-  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
-  background: linear-gradient(to left, #0072ff, #00b7ff);
-  font-size: 15px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 6px 52px;
-  border: 2px solid black;
-  text-decoration: none;
-  font-size: 15px;
+.txt1-Register{
+  position: absolute;
+  font-size: 2em;
+  left: -72%;
+  top: 20%;
 }
+
+.txt2-Register{
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  background-color: #7bcfbf;
+  font-size: 1.1em;
+  left: -85%;
+  top: 33%;
+  text-align: center;
+}
+
+/*Botones*/
+
+
 
 #Create-button {
   width: 150px;
@@ -185,58 +325,58 @@ form {
 #Create-button_cancel {
   width: 150px;
   height: 40px;
-  background: #f00000;
-  background: -webkit-linear-gradient(to left,
-      #f21f14,
-      #f00000);
-  background: linear-gradient(to left,
-      #ff2519,
-      #f00000);
-  font-size: 15px;
-  color: white;
-  padding: 9px 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: 2px solid black;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 25px;
-  top:45%;
-}
-
-#Create-User-button {
-  width: 150px;
-  height: 40px;
-  margin-top: 39px;
-  background: #008cff;
-  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
-  background: linear-gradient(to left, #0072ff, #00b7ff);
+  margin-top: 64%;
+  margin-left: 8%;
+  background: linear-gradient(to left, #14899b, #14899b);
   font-size: 15px;
   color: white;
   padding: 5px 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: 2px solid black;
+  border: 0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   text-decoration: none;
   font-size: 16px;
   position: relative;
-  border-radius: 25px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+#Login-button{
+  width: 150px;
+  height: 40px;
+  margin-top: 64%;
+  margin-left: 28%;
+  background: linear-gradient(to left, #019002, #019002);
+  font-size: 15px;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  border-radius: 5px;
   cursor:pointer;
 }
 
 #Create-User-button-Register {
-  width: 150px;
-  height: 40px;
-  top:30%;
-  background: #008cff;
-  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
-  background: linear-gradient(to left, #0072ff, #00b7ff);
-  font-size: 15px;
+  width: 33%;
+  height: 10%;
+  margin-top: 12%;
+  margin-left: 11%;
+  background: linear-gradient(to left, #14899b, #14899b);
+  font-size: 12px;
   color: white;
   padding: 5px 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: 2px solid black;
+  border: 0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   text-decoration: none;
-  font-size: 15px;
-  border-radius: 25px;
+  font-size: 16px;
+  position: relative;
+  border-radius: 5px;
+  cursor:pointer;
 }
 
 h4 {
@@ -245,4 +385,14 @@ h4 {
 
 #Text-Login{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top:20%;
+  margin-left: 4%;
+}
+#Title-Register{
+ margin-left: 20%;
+}
+#accept-condition{
+  position: absolute;
+  left: 15%;
+  top: 73%;
 }
