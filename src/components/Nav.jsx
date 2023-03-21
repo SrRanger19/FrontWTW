@@ -14,7 +14,7 @@ function Aside() {
                 <a>| Estadística |</a>
             </Link>
 
-             <Link to="/Register_Esp32" className='Block'>
+             <Link to="/" className='Block'>
                 <a>| Registro de ESP32 |</a>
             </Link>
 
