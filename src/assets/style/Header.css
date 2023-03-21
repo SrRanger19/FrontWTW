@@ -1,340 +1,83 @@
-@import url("./var.css");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.Header {
+.Header-controler {
   width: 100%;
-  height: 100px;
+  height: 20%;
+  margin-top: -2%;
+  margin-left: -0.6%;
   background: #00c6ff;
-  background: -webkit-linear-gradient(to bottom,
-      #0072ff,
-      #00c6ff);
-  background: linear-gradient(to bottom,
-      #0072ff,
-      #00c6ff);
   color: white;
   display: flex;
-  align-items: center;
-  align-content: center;
-  position: relative;
-  border-bottom: rgb(190, 184, 206) 2px solid;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  justify-content: center;
+  position: absolute;
 }
 
-.TitleTTG {
+.div-container-title{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 180%;
+}
+
+.div-title {
   font-family: "Bebas Neue", cursive;
+  width: 100%;
+  margin-left: 2%;
+  margin-top: 10%;
 }
 
-#logo {
-  width: 450px;
-  height: 100%;
+.Logo{
+  margin-top: 5%;
+  margin-left: -25%;
+  width: 13vh;
+  height:13vh;
   display: flex;
-  align-items: center;
-  align-content: center;
-  margin-left: 10px;
-  text-decoration: none;
+  justify-content: center;
 }
 
-#place-1 {
-  animation: rotation 8s infinite linear;
+.Logo {
+  animation: movimiento 3s infinite linear;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
+@keyframes movimiento {
+  0%{
+      transform: translateX(0);
   }
 
-  to {
-    transform: rotate(359deg);
+  50%{
+      transform: translateX(8%);
   }
-}
 
-#place-1 {
-  width: 100px;
-  height: 100%;
-  display: flex;
-}
-
-#place-2 {
-  width: 25px;
-  height: 50%;
-}
-
-#place-3 {
-  width: 50px;
-  height: 50%;
-}
-
-#place-4 {
-  width: 30px;
-  height: 50%;
+  100%{
+      transform: translateY(0%);
+  }
+  
 }
 
 img {
   object-fit: cover;
+  margin-top: 0%;
   width: 100%;
   height: 100%;
 }
 
-#logo span {
-  font-size: 30px;
-}
-
-#Reservation {
-  width: 100px;
-  height: 50%;
-  display: flex;
-  align-items: center;
+.Nav-controler {
+  background: #000000;
   position: absolute;
-  justify-content: center;
-  right: 560px;
-  text-decoration: none;
-}
-
-#Airplane {
-  width: 130px;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  right: 400px;
-  border-left: white 2px solid;
-  text-decoration: none;
-}
-
-#Cruise {
-  width: 130px;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  right: 250px;
-  border-left: white 2px solid;
-  text-decoration: none;
-}
-
-#Bus {
-  width: 100px;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  right: 150px;
-  border-left: rgb(255, 255, 255) 2px solid;
-  border-right: rgb(255, 255, 255) 2px solid;
-  text-decoration: none;
-}
-
-#Login {
-  width: 90px;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  right: 50px;
-  text-decoration: none;
-}
-
-#Control {
-  width: 130px;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  right: 50px;
-  text-decoration: none;
-  right: 10px;
-  border-left: white 2px solid;
-}
-
-#logo a {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-}
-
-#Reservation a,
-#Airplane a,
-#Cruise a,
-#Bus a,
-#Login a,
-#Control a {
-  font-size: 15px;
-  position: relative;
-  left: 5px;
-  color: rgb(255, 255, 255);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.menu-container {
-  width: 30px;
-  height: 30px;
-  
-  left: 51.5%;
-  margin-left: 1700%;
-}
-
-ul {
-  display: none;
-}
-
-input:checked~ul {
-  display: block;
-}
-
-#menu-hamburger {
-  display: none;
-}
-
-.menu-container label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid white;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-  cursor: pointer;
-}
-
-.menu-container label:hover {
-  background: rgb(0, 84, 163);
-}
-
-input:checked~label {
-  background: rgb(0, 136, 226);
-}
-
-.menu-container ul {
-  margin-top: 0;
-  position: relative;
-  right: 160px;
-  padding: 0;
-  width: 200px;
-  text-align: center;
-  z-index: 1;
-}
-
-.menu-container li {
-  display: block;
-  background: #0072ff;
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-li:hover {
-  filter: brightness(110%);
-}
-
-.alert-container {
-  width: 350px;
-  height: 375px;
-  position: relative;
-  right: 640px;
-  top: -110px;
-  z-index: var(--invisible);
-  background-color: rgb(21, 101, 193, 0.15);
-  backdrop-filter: blur(50px);
-  color: black;
-}
-
-#text-alert {
-  position: relative;
-  text-align: left;
-  font-size: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#alert-password-input {
-  width: 310px;
-  height: 30px;
-  position: relative;
-  left: 25%;
-  font-size: 15px;
-  color: black;
-  text-align: center;
-}
-
-#alert-password-input::placeholder {
-  color: gray;
-  font-size: 1.2em;
-  font-style: italic;
-}
-
-#alert-password-input:focus {
-  outline: none;
-}
-
-#btn-delete-account {
-  height: 100%;
   width: 100%;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#button-alert-confirm {
-  width: 310px;
-  height: 30px;
-  position: relative;
-  right: 22.5%;
-  font-size: 15px;
-  background: #f00000;
-  background: -webkit-linear-gradient(to left,
-      #f21f14,
-      #f00000);
-  background: linear-gradient(to left,
-      #ff2519,
-      #f00000);
-
-  color: white;
-  cursor: pointer;
-}
-
-#button-alert-cancel {
-  width: 310px;
-  height: 30px;
-  position: relative;
-  right: 22.5%;
-  font-size: 15px;
-  cursor: pointer;
+  height: 5%;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 40vh;
   
 }
 
-.M-Seccion {
-  text-decoration: none;
-  color: #fff;
+.Nav-controler a {
+  color: rgb(255, 255, 255);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#Control_system {
-  color: #fff;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  width: 90px;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  right: 40px;
   text-decoration: none;
-  margin-top: -25px;
-}
-
-#Control_system a {
-  margin: none;
+  margin-left: 1vh;
+  margin-right: 1vh;
 }

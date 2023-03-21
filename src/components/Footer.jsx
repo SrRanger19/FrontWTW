@@ -1,5 +1,5 @@
-import '../assets/Style/Footer.css'
-import { Link } from 'react-router-dom';
+import "../assets/style/Footer.css";
+import {Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -36,19 +36,7 @@ function Footer() {
 
                     <h3 className='title-sections'>Social networks</h3>
 
-                    <div className='social_networks'>
-                        <a href='https://www.facebook.com/profile.php?id=100088589435072' title='face'><img className='Card-networks-1' src="/icon/Facebook.svg" alt="face" /></a>
-
-
-
-                        <a href='https://www.instagram.com/thouringtheglobe/' title="instagram"> <img className='Card-networks-2' src="/icon/Instagram.svg" alt="instagram" /></a>
-
-
-                        <a href='https://api.whatsapp.com/send?phone=%2B529615615901&text=Welcome+to+the+agency%3A+Touring+the+globe%F0%9F%8C%8E%E2%9C%A8' title='what'><img className='Card-networks-3' src="/icon/WhatsApp.svg" alt='what' /></a>
-
-
-                    </div>
-
+         
                 </div>
 
                 <div >
