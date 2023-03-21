@@ -8,40 +8,38 @@ function Footer() {
             <div className="Footer">
 
                 <div className='div-section'>
-                    <h3 className='title-sections'>Business</h3>
+                    <h3 className='title-sections'>Negocio</h3>
                     <Link to="/About" id="text">
-                        <a >About us</a>
+                        <a >Sobre nosotros</a>
                     </Link>
                 </div>
 
                 <div className='div-section'>
                     <h3 className='title-sections'>Legal</h3>
                     <Link to="/Terms" id="text">
-                        <a >Terms</a>
+                        <a >Terminos</a>
                     </Link>
                     <Link to="/Policies" id="text">
-                        <a id='policies'>Privacy policies</a>
+                        <a id='policies'>Políticas de privacidad</a>
                     </Link>
                 </div>
 
                 <div className='div-section'>
-                    <h3 className='title-sections'>Help</h3>
+                    <h3 className='title-sections'>Ayuda</h3>
                     <Link to="/Frequent" id="text">
-                        <a id='frequent'>Frequent questions</a>
+                        <a id='frequent'>Preguntas frecuentes</a>
                     </Link>
                 </div>
 
 
                 <div className='div-section'>
 
-                    <h3 className='title-sections'>Social networks</h3>
-
-         
+                    <h3 className='title-sections'>Redes sociales</h3>
                 </div>
 
                 <div >
                     <div class="copyright">
-                        © Copyright 2022. All rights reserved. Developed by Touring The Globe✨
+                        © Copyright 2022. Todos los derechos reservados. Desarollado por Watering the world
                     </div>
                 </div>
             </div>
